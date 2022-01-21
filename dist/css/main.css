@@ -855,6 +855,10 @@ li {
   min-height: 90px;
 }
 
+.navbar-toggler-icon {
+  background-color: black;
+}
+
 html,
 body {
   height: 100%;
