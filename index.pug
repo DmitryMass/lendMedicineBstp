@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    include ./pugfile/head
+    body 
+        include ./pugfile/var
+        .main-wrap 
+            .header-main
+                include ./pugfile/header
+                include ./pugfile/main
+            include ./pugfile/section1  
+            include ./pugfile/section2  
+            include ./pugfile/section3 
+            include ./pugfile/section4 
+        include ./pugfile/footer 
+        script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+        script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+        script(defer src="./js/main.js")
+        

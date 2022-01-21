@@ -1,0 +1,139 @@
+.section1 {
+  &-main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &-innovation {
+    width: 50%;
+    background: $darkGreen;
+  }
+  &-block1 {
+    min-height: 350px;
+  }
+  &-button {
+    min-width: 125px;
+    min-height: 40px;
+    background: $lightGreen;
+    border: none;
+    margin: 35px 35px 30px 30px;
+    color: $white;
+    font-size: $md18;
+    line-height: $lhsm21;
+    &__block2 {
+      min-width: 186px;
+    }
+  }
+  &-subtitle {
+    margin-left: 30px;
+    color: $white;
+    font-size: $md30;
+    line-height: 150%;
+    margin-bottom: 25px;
+    max-width: 435px;
+  }
+  &-btn {
+    margin-left: 20px;
+    display: flex;
+    width: 170px;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+    color: $white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(60, 255, 206);
+      transition: 0.8s ease;
+    }
+  }
+  &-about {
+    font-size: $smS16;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  &-object_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $white;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    margin-right: 10px;
+  }
+  &-img_btn {
+    width: 100%;
+    margin-bottom: -2px;
+  }
+}
+//////////////////////////////section1-block2
+
+.section1 {
+  &-estetic {
+    width: 50%;
+  }
+  &-block2 {
+    position: relative;
+    &_img {
+      position: absolute;
+      top: 85px;
+      right: 0;
+      z-index: -1;
+      max-width: 306px;
+      max-height: 400px;
+    }
+  }
+  &-box1 {
+    position: relative;
+    margin: 25px 0 25px 35px;
+    display: flex;
+    align-items: center;
+    max-width: 235px;
+    cursor: pointer;
+    &:hover {
+      max-width: 460px;
+      max-height: 86px;
+    }
+    &:hover > .section1-number {
+      font-size: 96px;
+      line-height: 150%;
+      font-weight: 500;
+      color: $darkGreen;
+      opacity: 1;
+      transition: 0.3s ease;
+    }
+    &:hover > .section1-info {
+      font-size: $md28;
+      line-height: $lhmd31;
+      font-weight: 500;
+      color: $black;
+      opacity: 1;
+      transition: 0.8s ease;
+    }
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+  &-number {
+    font-size: $lg48;
+    line-height: 150%;
+    color: black;
+    opacity: 0.5;
+    margin-right: 20px;
+  }
+  &-info {
+    font-size: $sm;
+    font-weight: 500;
+    line-height: $lhsm17;
+    opacity: 0.5;
+  }
+}

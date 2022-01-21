@@ -1,0 +1,19 @@
+-var secondBoxList =[{name: 'адрес', street: 'Невский пр. 140, пом. 10', button: 'как проехать?'},{name: 'адрес', street: 'Большой пр. 12', button: 'как проехать?'}]
+section.section4 
+    .container.flex-box 
+        .section4-box 
+            ul.section4-ul
+                each boxTxt in boxList  
+                    li.section4-list 
+                        h2.section4-list__title=boxTxt.txt
+                        a(href="#").section4-list__item=boxTxt.txt2
+                        a(href="#").section4-list__item=boxTxt.txt3
+                        a(href="#").section4-list__item=boxTxt.txt4 
+                        a(href="#").section4-list__item=boxTxt.txt5
+        .section4-box2
+            ul.section4-box2__ul 
+                each secondBox in secondBoxList 
+                    li.section4-box2__list 
+                        p.section4-box2__item=secondBox.name 
+                        h2.section4-box2__item=secondBox.street
+                        button.section4-box2__button=secondBox.button

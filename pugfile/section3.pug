@@ -1,0 +1,16 @@
+section.section3 
+    .container 
+        .section3-title 
+            h2.section3-h2 Актуальные спецпредложения 
+        .section3-box 
+            each hoverVar in hoverItem
+                .section3-box__item 
+                    img(src=hoverVar.img, alt="")
+                    button.section3-box__button=hoverVar.btn
+                    .section3-list 
+                        p.section3-list__item=hoverVar.txt
+                        button.section1-object_btn.section3-object__button
+                            object(data=hoverVar.obj, type="") 
+
+
+            

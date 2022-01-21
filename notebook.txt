@@ -1,0 +1,41 @@
+-var dotsItem = [{item: 'currentSlide(1)', txt:'Комплексные процедуры'}, {item: 'currentSlide(2)', txt:'Центр обучения'}, {item: 'currentSlide(3)', txt:'VIP клиентам'}]
+
+each dotsVar in dotsItem
+            button.dot.dot-first.dots(onclick=dotsVar.item) 
+                p.dot-txt=dotsVar.txt
+
+
+
+                    //- .section3-box__item 
+    //-     img(src="../../assets/images/actual_imgpng", alt="")
+    //-     button.section3-box__button Косметология
+     //-     .section3-list 
+    //-         p.section3-list__item Лазерное фотоомоложение
+     //-         button.section1-object_btsection3-object__button
+     //-             object(data="./assets/iconarrow.svg", type="") 
+     //- .section3-box__item 
+    //-     img(src="../../assets/images/actual_imgpng", alt="")
+     //-     button.section3-box__button Косметология
+    //-     .section3-list 
+    //-         p.section3-list__item Лазерное фотоомоложение
+     //-         button.section1-object_btsection3-object__button
+     //-             object(data="./assets/iconarrow.svg", type="") 
+     //- .section3-box__item 
+     //-     img(src="../../assets/images/actual_imgpng", alt="")
+     //-     button.section3-box__button Косметология
+     //-     .section3-list 
+    //-         p.section3-list__item Лазерное фотоомоложение
+     //-         button.section1-object_btsection3-object__button
+    //-             object(data="./assets/iconarrow.svg", type="") 
+
+///////
+scroll bar 
+
+
+::-webkit-scrollbar — вся полоса прокрутки.
+::-webkit-scrollbar-button — кнопки на полосе прокрутки (стрелки вверх и вниз, прокручивающие по одной строке).
+::-webkit-scrollbar-thumb — перетаскиваемый маркер прокрутки.
+::-webkit-scrollbar-track — дорожка (индикатор прогресса) полосы прокрутки, где есть серая полоса поверх белой.
+::-webkit-scrollbar-track-piece — часть трека (прогресс-бар), не закрытая ручкой.
+::-webkit-scrollbar-corner — нижний угол полосы прокрутки, где пересекаются горизонтальная и вертикальная полосы прокрутки. Часто это правый нижний угол окна браузера.
+::-webkit-resizer — перетаскиваемый маркер изменения размера, который появляется в нижнем углу некоторых элементов.

@@ -1,0 +1,22 @@
+section.section2
+    .container 
+        .section2-slider 
+            .section2-dots 
+                .section2-news
+                    button.section2-news__btnNews Новости
+                button.section2-dots__item(onclick='currSlide(1)') Почему рекомендуется посещать профессионального косметолога. Мнение специалистов центра
+                button.section2-dots__item(onclick='currSlide(2)') Стандартизация деятельности клиник в соответствии с ISO 9001:2015.
+                button.section2-dots__item(onclick='currSlide(3)') Индивидуальный подход к каждому пациенту и подбор оптимальных косметологических методик.
+            each slider in sliderItem
+                .section2-txt 
+                    h2.section2-title=slider.title
+                    ul.section2-ul 
+                        li.section2-li=slider.txt
+                        li.section2-li=slider.txt2
+                        li.section2-li=slider.txt3 
+                        li.section2-li=slider.txt4
+
+
+
+
+

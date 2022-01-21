@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+  </head>
+  <body> 
+    <div class="main-wrap"> 
+      <div class="header-main">
+        <header class="header-main"> 
+          <div class="container flex-container"> 
+            <div class="header-logo__block"><a class="header-logo__top" href=""> 
+                <object class="header-logo__obj" data="./assets/icons/logo.svg" type=""> </object></a></div>
+            <nav class="header-nav"> 
+              <ul class="header-ul d-flex">
+                <li class="header-li flex-box"><a class="header-link" href="">+7 (123) 456 78 90</a></li>
+                <li class="header-li flex-box header-li--services">
+                  <div class="header-salon flex-box"> 
+                    <div class="header-link header-link--salon flex-box">Наши салоны </div>
+                    <ion-icon class="lgth-green icons icons--salon" name="caret-down-circle-outline"></ion-icon>
+                  </div>
+                  <ul class="header-content">
+                    <li class="header-li--content"><a href="">Ваша информация</a></li>
+                    <li class="header-li--content"><a href="">Ваша информация</a></li>
+                    <li class="header-li--content"><a href="">Ваша информация</a></li>
+                    <li class="header-li--content"><a href="">Ваша информация</a></li>
+                  </ul>
+                </li>
+                <div class="header-btn flex-box"> 
+                  <button class="header-button flex-box">
+                    <ion-icon class="white white--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
+                  </button>
+                </div>
+                <li class="header-li flex-box"><a class="header-link" href=""> 
+                    <ion-icon class="lgth-green icons icons--vk" name="logo-vk"></ion-icon></a></li>
+                <li class="header-li flex-box"><a class="header-link" href=""> 
+                    <ion-icon class="lgth-green icons icons--youtube" name="logo-youtube"></ion-icon></a></li>
+                <li class="header-li flex-box"><a class="header-link" href=""> 
+                    <ion-icon class="lgth-green icons icons--facebook" name="logo-facebook"></ion-icon></a></li>
+                <li class="header-li flex-box"><a class="header-link" href=""> 
+                    <ion-icon class="lgth-green icons icons--instagramm" name="logo-instagram"></ion-icon></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main class="main-page">
+          <div class="container"> 
+            <div class="main-desk"> 
+              <nav class="main-navigation">
+                <ul class="main-ul flex-main"> 
+                  <li class="main-li"><a class="main-link" href="cosmetology.html">Косметология</a></li>
+                  <li class="main-li"><a class="main-link" href="plastic.html">Пластическая хирургия</a></li>
+                  <li class="main-li"><a class="main-link" href="dentistry.html">Стоматология</a></li>
+                  <li class="main-li"><a class="main-link" href="laser.html">Лазерная медицина</a></li>
+                  <li class="main-li"><a class="main-link" href="contact.html">Контакты</a></li>
+                  <button class="main-button">Запись на прием</button>
+                </ul>
+              </nav>
+              <div class="main-block flex-main">
+                <div class="slider-section">
+                  <div class="slider">
+                    <div class="item">
+                      <div class="main-card">
+                        <h2 class="main-title">Косметология</h2>
+                        <p class="main-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
+                      </div>
+                      <button class="main-slider__button">подробнее</button>
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="item">
+                      <div class="main-card">
+                        <h2 class="main-title">Наши салоны</h2>
+                        <p class="main-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
+                      </div>
+                      <button class="main-slider__button">подробнее</button>
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="item">
+                      <div class="main-card">
+                        <h2 class="main-title">Cтоматология</h2>
+                        <p class="main-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
+                      </div>
+                      <button class="main-slider__button">подробнее</button>
+                    </div>
+                  </div>
+                  <div class="slider-button">               <a class="next" onclick="nextSlide()"> 
+                      <object class="slider-object" data="./assets/icons/arrow-lefth.svg" type=""> </object></a><a class="previous" onclick="previousSlide()"> 
+                      <object class="slider-object" data="./assets/icons/arrow-right.svg" type=""> </object></a></div>
+                </div>
+                <div class="main-img"> <img class="main-picture" src="./assets/images/woman.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="dot-container">
+            <button class="dot dot-first dots" onclick="currentSlide(1)"> 
+              <p class="dot-txt">Комплексные процедуры </p>
+            </button>
+            <button class="dot dot-second dots" onclick="currentSlide(2)"> 
+              <p class="dot-txt">Центр обучения</p>
+            </button>
+            <button class="dot dot-third dots" onclick="currentSlide(3)"> 
+              <p class="dot-txt">VIP клиентам</p>
+            </button>
+          </div>
+        </main>
+      </div>
+      <section class="section1-main"> 
+        <div class="container section1-flex">
+          <div class="section1-innovation">
+            <div class="section1-block1"> 
+              <button class="section1-button">Инновации</button>
+              <p class="section1-subtitle">Мы практикуем новый курс процедур аппаратной косметологии  </p>
+              <div class="section1-next d-flex">
+                <button class="section1-btn"> 
+                  <div class="section1-object_btn">
+                    <object data="./assets/icons/arrow.svg" type=""> </object>
+                  </div>
+                  <p class="section1-about">Подробнее</p>
+                </button>
+              </div>
+            </div>
+            <div class="section1-img"> <img class="section1-img_btn" src="./assets/images/innovations__img.png" alt=""></div>
+          </div>
+          <div class="section1-estetic"> 
+            <div class="section1-block2"> 
+              <button class="section1-button section1-button__block2">Эстетика красоты</button>
+              <ul class="section1-ul">
+                <li class="section1-box1"> 
+                  <h2 class="section1-number">78</h2>
+                  <p class="section1-info">Современных центра в странах СНГ</p>
+                </li>
+                <li class="section1-box1"> 
+                  <h2 class="section1-number">78</h2>
+                  <p class="section1-info">Современных центра в странах СНГ</p>
+                </li>
+                <li class="section1-box1"> 
+                  <h2 class="section1-number">78</h2>
+                  <p class="section1-info">Современных центра в странах СНГ</p>
+                </li>
+                <li class="section1-box1"> 
+                  <h2 class="section1-number">78</h2>
+                  <p class="section1-info">Современных центра в странах СНГ</p>
+                </li>
+              </ul><img class="section1-block2_img" src="./assets/images/diploma.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container"> 
+          <div class="section2-slider"> 
+            <div class="section2-dots"> 
+              <div class="section2-news">
+                <button class="section2-news__btnNews">Новости</button>
+              </div>
+              <button class="section2-dots__item" onclick="currSlide(1)">Почему рекомендуется посещать профессионального косметолога. Мнение специалистов центра</button>
+              <button class="section2-dots__item" onclick="currSlide(2)">Стандартизация деятельности клиник в соответствии с ISO 9001:2015.</button>
+              <button class="section2-dots__item" onclick="currSlide(3)">Индивидуальный подход к каждому пациенту и подбор оптимальных косметологических методик.</button>
+            </div>
+            <div class="section2-txt"> 
+              <h2 class="section2-title">Почему рекомендуется посещать профессионального косметолога. Мнение специалистов центра</h2>
+              <ul class="section2-ul"> 
+                <li class="section2-li">Процедуры аппаратной косметологии на оборудовании экспертного класса от ведущих мировых производителей могут проводиться в любом возрасте и решать широкий спектр проблем: возрастные изменения, покраснения, акне и купероз, потеря тонуса и упругости кожи, отечность, целлюлит и т. п.</li>
+                <li class="section2-li">Лазерное и фотоомоложение помогут запустить процесс синтеза собственного коллагена, улучшить светооптические свойства кожи, а также получить максимальный эффект подтяжки лица без уколов и длительного восстановительного периода.</li>
+                <li class="section2-li">Курс процедур лазерной эпиляции поможет навсегда избавиться от проблемы нежелательных волос.</li>
+                <li class="section2-li">С помощью инъекционных методик мы можем разгладить морщины, провести объёмное моделирование, увлажнить кожу, ввести активные вещества в поверхностные и средние слои кожи, запустить процессы омоложения.</li>
+              </ul>
+            </div>
+            <div class="section2-txt"> 
+              <h2 class="section2-title">Стандартизация деятельности клиник в соответствии с ISO 9001:2015.</h2>
+              <ul class="section2-ul"> 
+                <li class="section2-li">Процедуры аппаратной косметологии на оборудовании экспертного класса от ведущих мировых производителей могут проводиться в любом возрасте и решать широкий спектр проблем: возрастные изменения, покраснения, акне и купероз, потеря тонуса и упругости кожи, отечность, целлюлит и т. п.</li>
+                <li class="section2-li">Лазерное и фотоомоложение помогут запустить процесс синтеза собственного коллагена, улучшить светооптические свойства кожи, а также получить максимальный эффект подтяжки лица без уколов и длительного восстановительного периода.</li>
+                <li class="section2-li">МНОГО ИНФОРМАЦИИ</li>
+                <li class="section2-li">С помощью инъекционных методик мы можем разгладить морщины, провести объёмное моделирование, увлажнить кожу, ввести активные вещества в поверхностные и средние слои кожи, запустить процессы омоложения.</li>
+              </ul>
+            </div>
+            <div class="section2-txt"> 
+              <h2 class="section2-title">Индивидуальный подход к каждому пациенту и подбор оптимальных косметологических методик.</h2>
+              <ul class="section2-ul"> 
+                <li class="section2-li">Процедуры аппаратной косметологии на оборудовании экспертного класса от ведущих мировых производителей могут проводиться в любом возрасте и решать широкий спектр проблем: возрастные изменения, покраснения, акне и купероз, потеря тонуса и упругости кожи, отечность, целлюлит и т. п.</li>
+                <li class="section2-li">Лазерное и фотоомоложение помогут запустить процесс синтеза собственного коллагена, улучшить светооптические свойства кожи, а также получить максимальный эффект подтяжки лица без уколов и длительного восстановительного периода.</li>
+                <li class="section2-li">Курс процедур лазерной эпиляции поможет навсегда избавиться от проблемы нежелательных волос.</li>
+                <li class="section2-li">МНОГО МНОГО ИНФОРМАЦИИИИ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3"> 
+        <div class="container"> 
+          <div class="section3-title"> 
+            <h2 class="section3-h2">Актуальные спецпредложения </h2>
+          </div>
+          <div class="section3-box"> 
+            <div class="section3-box__item"> <img src="../../assets/images/actual_img1.png" alt="">
+              <button class="section3-box__button">Косметология</button>
+              <div class="section3-list"> 
+                <p class="section3-list__item">Лазерное и фотоомоложение</p>
+                <button class="section1-object_btn section3-object__button">
+                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                </button>
+              </div>
+            </div>
+            <div class="section3-box__item"> <img src="../../assets/images/actual_img2.png" alt="">
+              <button class="section3-box__button">Косметология</button>
+              <div class="section3-list"> 
+                <p class="section3-list__item">Лазерное и фотоомоложение</p>
+                <button class="section1-object_btn section3-object__button">
+                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                </button>
+              </div>
+            </div>
+            <div class="section3-box__item"> <img src="../../assets/images/actual_img3.png" alt="">
+              <button class="section3-box__button">Косметология</button>
+              <div class="section3-list"> 
+                <p class="section3-list__item">Лазерное и фотоомоложение</p>
+                <button class="section1-object_btn section3-object__button">
+                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                </button>
+              </div>
+            </div>
+            <div class="section3-box__item"> <img src="../../assets/images/actual_img4.png" alt="">
+              <button class="section3-box__button">Косметология</button>
+              <div class="section3-list"> 
+                <p class="section3-list__item">Лазерное и фотоомоложение</p>
+                <button class="section1-object_btn section3-object__button">
+                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section4"> 
+        <div class="container flex-box"> 
+          <div class="section4-box"> 
+            <ul class="section4-ul">
+              <li class="section4-list"> 
+                <h2 class="section4-list__title">Услуги</h2><a class="section4-list__item" href="#">Косметология</a><a class="section4-list__item" href="#">Пластическая хирургия</a><a class="section4-list__item" href="#">Стоматология</a><a class="section4-list__item" href="#">Лазерная медицина</a>
+              </li>
+              <li class="section4-list"> 
+                <h2 class="section4-list__title">Услуги</h2><a class="section4-list__item" href="#">Косметология</a><a class="section4-list__item" href="#">Пластическая хирургия</a><a class="section4-list__item" href="#">Стоматология</a><a class="section4-list__item" href="#">Лазерная медицина</a>
+              </li>
+              <li class="section4-list"> 
+                <h2 class="section4-list__title">Услуги</h2><a class="section4-list__item" href="#">Косметология</a><a class="section4-list__item" href="#">Пластическая хирургия</a><a class="section4-list__item" href="#">Стоматология</a><a class="section4-list__item" href="#">Лазерная медицина</a>
+              </li>
+              <li class="section4-list"> 
+                <h2 class="section4-list__title">Услуги</h2><a class="section4-list__item" href="#">Косметология</a><a class="section4-list__item" href="#">Пластическая хирургия</a><a class="section4-list__item" href="#">Стоматология</a><a class="section4-list__item" href="#">Лазерная медицина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="section4-box2">
+            <ul class="section4-box2__ul"> 
+              <li class="section4-box2__list"> 
+                <p class="section4-box2__item">адрес</p>
+                <h2 class="section4-box2__item">Невский пр. 140, пом. 10</h2>
+                <button class="section4-box2__button">как проехать?</button>
+              </li>
+              <li class="section4-box2__list"> 
+                <p class="section4-box2__item">адрес</p>
+                <h2 class="section4-box2__item">Большой пр. 12</h2>
+                <button class="section4-box2__button">как проехать?</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">  
+      <div class="container"> 
+        <div class="footer-about"> </div>
+        <div class="footer-menu"> 
+          <div class="header-btn flex-box"> 
+            <button class="header-button flex-box">
+              <ion-icon class="whitewhite--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
+            </button>
+          </div>
+          <li class="header-li flex-box"><a class="header-link" href=""> 
+              <ion-icon class="lgth-greenicons icons--vk" name="logo-vk"></ion-icon></a></li>
+          <li class="header-li flex-box"><a class="header-link" href=""> 
+              <ion-icon class="lgth-green icons icons--youtube" name="logo-youtube"></ion-icon></a></li>
+          <li class="header-li flex-box"><a class="header-link" href=""> 
+              <ion-icon class="lgth-green icons icons--facebook" name="logo-facebook"></ion-icon></a></li>
+          <li class="header-li flex-box"><a class="header-link" href=""> 
+              <ion-icon class="lgth-green icons icons--instagramm" name="logo-instagram"></ion-icon></a></li>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>

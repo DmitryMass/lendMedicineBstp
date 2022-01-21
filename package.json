@@ -1,0 +1,20 @@
+{
+  "name": "lendingmedicine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rug-pug": "pug --pretty --watch index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryMass/lendingMedicine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryMass/lendingMedicine/issues"
+  },
+  "homepage": "https://github.com/DmitryMass/lendingMedicine#readme"
+}

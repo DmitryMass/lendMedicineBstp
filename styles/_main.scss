@@ -1,0 +1,173 @@
+.main {
+  &-page {
+    min-height: 700px;
+    background: $lightGreen;
+    padding-top: 30px;
+    position: relative;
+  }
+  &-link {
+    padding: 12px 25px;
+    font-size: $md18;
+    line-height: $lhsm21;
+    font-weight: 500;
+    border-radius: 12px;
+    &:hover {
+      background: $darkGreen;
+      transition: all 0.8s ease;
+      box-shadow: 0px 1px 8px gray;
+    }
+  }
+  &-button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    font-size: $md18;
+    line-height: $lhsm21;
+    font-weight: 500;
+    color: $black;
+    border-radius: 12px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 1px 1px 8px gray;
+      color: $darkGreen;
+    }
+  }
+}
+
+// sliders
+.slider {
+  max-width: 400px;
+  &-button {
+    display: flex;
+    max-width: 500px;
+    justify-content: flex-end;
+  }
+}
+
+.previous,
+.next {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid $white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.slider-object {
+  position: relative;
+  z-index: -1;
+  padding: 13px;
+  padding-top: 20px; // использую дисплей-инлайн блок,
+  // чтобы ссылка на слайдер работала. ПО этому выравниваю паддингом
+  //вместо флекса
+}
+// main slider
+.main {
+  &-title {
+    color: $white;
+    font-size: $lg48;
+    line-height: $lh150;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  &-subtitle {
+    font-size: $sm;
+    font-weight: 500;
+    line-height: $lhsm17;
+    padding-bottom: 40px;
+    color: $white;
+  }
+  &-slider__button {
+    width: 163px;
+    height: 60px;
+    color: $white;
+    background-color: $darkGreen;
+    font-size: $md18;
+    line-height: $lhsm21;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    &:hover {
+      transition: all 0.8s ease;
+      box-shadow: 0px 1px 8px grey;
+      color: rgb(60, 255, 206);
+    }
+  }
+  &-picture {
+    width: 100%;
+  }
+  &-img {
+    padding-top: 25px;
+  }
+}
+// dot
+
+.dot {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  &.active:focus {
+    background-color: $lightGreen;
+  }
+
+  &-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    left: 1%;
+  }
+  &-first,
+  &-second,
+  &-third {
+    background-color: $darkGreen;
+    color: $white;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: $lhmd24;
+    height: 67px;
+    text-align: center;
+    opacity: 0.8;
+    border: 1px solid transparent;
+    &:hover {
+      opacity: 1;
+      transition: all 0.4s ease;
+    }
+    &.active:focus {
+      transition: 0.8s ease;
+      opacity: 1;
+    }
+  }
+  &-first {
+    background-color: $darkGreen;
+    width: 648px;
+    &.active:focus {
+      border: 1px solid $darkGreen;
+    }
+  }
+  &-second,
+  &-third {
+    width: 324px;
+  }
+}
+//animation
+
+.main-card {
+  animation-name: slider;
+  animation-duration: 1.5s;
+}

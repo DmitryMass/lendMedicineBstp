@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import "./reset";
+@import "./var";
+@import "./header";
+@import "./main";
+@import "./section1";
+@import "./section2";
+@import "./section3";
+@import "./section4";
+@import "./footer";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+.main-wrap {
+  min-height: calc(100vh - 90px);
+}
+::-webkit-scrollbar {
+  width: 12px;
+  &-track-piece {
+    background: rgb(222, 247, 222);
+    border: 1px solid gray;
+  }
+  &-thumb {
+    background: rgb(70, 95, 107);
+    border-radius: 50px;
+    border: 1px solid gray;
+  }
+  &-button {
+    background: rgb(180, 208, 245);
+    border: 1px solid gray;
+  }
+  // &-button {
+  //   background: $darkGreen;
+  // }
+}
+
+// Containers mixin
+
+@mixin container($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.container {
+  @include container(1295px);
+}
+
+//flex-container
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.d-flex {
+  display: flex;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.section1-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+// keyframes
+@keyframes button {
+  0% {
+    left: -2%;
+    background-color: $darkGreen;
+  }
+  100% {
+    left: 5%;
+    background-color: $lightGreen;
+  }
+}
+@keyframes slider {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Media
+
+// Var selectors
+
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+  &--pad {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  &--btn {
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: $sm;
+    line-height: $lhsm17;
+  }
+}
+.lgth-green {
+  color: $lightGreen;
+}
+.dark-Green {
+  background-color: $darkGreen;
+}
+.light-Green {
+  background-color: $lightGreen;
+}
+.icons {
+  font-size: 25px;
+}
+.red {
+  color: red;
+}

@@ -1,0 +1,32 @@
+main.main-page
+    .container 
+        .main-desk 
+            nav.main-navigation
+                ul.main-ul.flex-main 
+                    each linkVar in linkItems 
+                        li.main-li
+                            a.main-link(href=linkVar.link)=linkVar.title 
+                    button.main-button Запись на прием
+            .main-block.flex-main
+                .slider-section
+                    each sliderVar in sliders
+                        .slider
+                            .item
+                                .main-card
+                                    h2.main-title=sliderVar.name
+                                    p.main-subtitle=sliderVar.subtitle
+                                button.main-slider__button=sliderVar.button
+                    .slider-button                
+                        a.next(onclick='nextSlide()') 
+                            object.slider-object(data="./assets/icons/arrow-lefth.svg", type="") 
+                        a.previous(onclick='previousSlide()') 
+                            object.slider-object(data="./assets/icons/arrow-right.svg", type="") 
+                .main-img 
+                    img.main-picture(src="./assets/images/woman.png", alt="")
+    .dot-container
+        button.dot.dot-first.dots(onclick='currentSlide(1)') 
+            p.dot-txt Комплексные процедуры 
+        button.dot.dot-second.dots(onclick='currentSlide(2)') 
+            p.dot-txt Центр обучения
+        button.dot.dot-third.dots(onclick='currentSlide(3)') 
+            p.dot-txt VIP клиентам
