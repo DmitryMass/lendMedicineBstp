@@ -7,6 +7,14 @@ main.main-page
                         li.main-li
                             a.main-link(href=linkVar.link)=linkVar.title 
                     button.main-button Запись на прием
+            .dropdown
+                button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                    | Dropdown
+                ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+                    each linkVar in linkItems
+                        li
+                            button.dropdown-item(type='button')
+                                a.dropdown-link(href=linkVar.link)=linkVar.title
             .main-block.flex-main
                 .slider-section
                     each sliderVar in sliders

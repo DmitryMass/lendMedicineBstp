@@ -855,8 +855,52 @@ li {
   min-height: 90px;
 }
 
+.header-menu {
+  display: none;
+}
+
+.navbar-toggler {
+  background: #4fbfa5;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar-toggler-icon {
-  background-color: black;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-toggler-icon::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: white;
+  transform: translateY(-6px);
+  transition: 0.5s;
+}
+
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: white;
+  transform: translateY(6px);
+  transition: 0.5s;
+}
+
+.offcanvas-end {
+  height: 250px;
+}
+
+.dropdown {
+  display: none;
 }
 
 html,
@@ -945,6 +989,21 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .header-menu {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .main-navigation {
+    display: none;
+  }
+  .dropdown {
+    display: block;
   }
 }
 

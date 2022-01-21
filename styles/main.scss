@@ -100,7 +100,24 @@ body {
 }
 
 // Media
-
+@media screen and (max-width: 1220px) {
+  // header
+  .header {
+    &-menu {
+      display: block;
+    }
+    &-nav {
+      display: none;
+    }
+  }
+  // main
+  .main-navigation {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+}
 // Var selectors
 
 .black {
