@@ -111,12 +111,17 @@ body {
     }
   }
   // main
-  .main-navigation {
-    display: none;
+  .main {
+    &-navigation {
+      display: none;
+    }
   }
   .dropdown {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
+}
+@media screen and (max-width: 564px) {
 }
 // Var selectors
 
