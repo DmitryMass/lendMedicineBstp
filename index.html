@@ -18,9 +18,9 @@
                 <object class="header-logo__obj" data="./assets/icons/logo.svg" type=""> </object></a></div>
             <nav class="header-nav"> 
               <ul class="header-ul d-flex">
-                <li class="header-li flex-box"><a class="header-link" href="#">+7 (123) 456 78 90</a></li>
+                <li class="header-li flex-box__btn"> <a class="header-link" href="#">+7 (123) 456 78 90</a></li>
                 <li class="header-li flex-box header-li--services">
-                  <div class="header-salon flex-box"> 
+                  <div class="header-salon flex-box__btn"> 
                     <div class="header-link header-link--salon flex-box">Наши салоны </div>
                     <ion-icon class="lgth-green icons icons--salon" name="caret-down-circle-outline"></ion-icon>
                   </div>
@@ -32,17 +32,17 @@
                   </ul>
                 </li>
                 <div class="header-btn flex-box"> 
-                  <button class="header-button flex-box">
+                  <button class="header-button flex-box__btn"> 
                     <ion-icon class="white white--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
                   </button>
                 </div>
-                <li class="header-li flex-box"><a class="header-link" href="#"> 
+                <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
                     <ion-icon class="lgth-green icons icons--vk" name="logo-vk"></ion-icon></a></li>
-                <li class="header-li flex-box"><a class="header-link" href="#"> 
+                <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
                     <ion-icon class="lgth-green icons icons--youtube" name="logo-youtube"></ion-icon></a></li>
-                <li class="header-li flex-box"><a class="header-link" href="#"> 
+                <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
                     <ion-icon class="lgth-green icons icons--facebook" name="logo-facebook"></ion-icon></a></li>
-                <li class="header-li flex-box"><a class="header-link" href="#"> 
+                <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
                     <ion-icon class="lgth-green icons icons--instagramm" name="logo-instagram"></ion-icon></a></li>
               </ul>
             </nav>
@@ -333,21 +333,27 @@
     </div>
     <footer class="footer">  
       <div class="container"> 
-        <div class="footer-about"> </div>
-        <div class="footer-menu"> 
-          <div class="header-btn flex-box"> 
-            <button class="header-button flex-box">
-              <ion-icon class="whitewhite--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
-            </button>
+        <div class="footer-box">
+          <div class="footer-about"> 
+            <p class="footer-about__item">(c) 2021. Центр космелогии. Все права защищены.Наши сертификаты на осуществление деятельности.Патенты на использование технологий.</p><a class="footer-about__item" href="#"> Политика конфиденциальности</a>
           </div>
-          <li class="header-li flex-box"><a class="header-link" href=""> 
-              <ion-icon class="lgth-greenicons icons--vk" name="logo-vk"></ion-icon></a></li>
-          <li class="header-li flex-box"><a class="header-link" href=""> 
-              <ion-icon class="lgth-green icons icons--youtube" name="logo-youtube"></ion-icon></a></li>
-          <li class="header-li flex-box"><a class="header-link" href=""> 
-              <ion-icon class="lgth-green icons icons--facebook" name="logo-facebook"></ion-icon></a></li>
-          <li class="header-li flex-box"><a class="header-link" href=""> 
-              <ion-icon class="lgth-green icons icons--instagramm" name="logo-instagram"></ion-icon></a></li>
+          <div class="footer-menu"> 
+            <div class="footer-btn">
+              <button class="footer-button flex-box__btn">
+                <ion-icon class="whitewhite--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
+              </button>
+            </div>
+            <div class="footer-social">
+              <div class="footer-messengers flex-box__btn"><a class="footer-link" href=""> 
+                  <ion-icon class="lgth-green icons icons--vk" name="logo-vk"></ion-icon></a></div>
+              <div class="footer-messengers flex-box__btn"><a class="footer-link" href=""> 
+                  <ion-icon class="lgth-green icons icons--youtube" name="logo-youtube"></ion-icon></a></div>
+              <div class="footer-messengers flex-box__btn"><a class="footer-link" href=""> 
+                  <ion-icon class="lgth-green icons icons--facebook" name="logo-facebook"></ion-icon></a></div>
+              <div class="footer-messengers flex-box__btn"><a class="footer-link" href=""> 
+                  <ion-icon class="lgth-green icons icons--instagramm" name="logo-instagram"></ion-icon></a></div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -88,6 +88,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+.flex-box__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flex-main {
   display: flex;
@@ -165,6 +171,35 @@ li {
     &-news {
       display: none;
     }
+  }
+
+  ////////////// SECTION 4 ///////////////
+  .section4 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &-ul {
+      justify-content: center;
+      gap: 20px;
+    }
+    &-list {
+      &:nth-child(3),
+      &:last-child {
+        display: none;
+      }
+    }
+    &-box2 {
+      padding-top: 20px;
+      &__item {
+        &:nth-child(2) {
+          font-size: 16px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .flex-box {
+    gap: 20px;
+    flex-wrap: wrap;
   }
 }
 /////////////////////////////////
@@ -323,6 +358,17 @@ li {
     }
     &-third {
       border-radius: 0px 8px 8px 0px;
+    }
+  }
+
+  // FOOOTER ////////////
+
+  .footer {
+    &-menu {
+      flex-wrap: wrap;
+    }
+    &-about {
+      gap: 20px;
     }
   }
 }

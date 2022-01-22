@@ -1,3 +1,70 @@
 .footer {
   min-height: 90px;
+  &-box {
+    border: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+    &__item {
+      color: $black;
+      font-size: 12px;
+      line-height: $lh150;
+      &:first-child {
+        max-width: 300px;
+      }
+      &:last-child {
+        text-decoration: underline;
+        &:hover {
+          color: $darkGreen;
+        }
+        &:focus {
+          color: $darkGreen;
+        }
+      }
+    }
+  }
+  &-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  &-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+  &-btn {
+    padding: 10px;
+  }
+  &-button {
+    background-color: #00868a;
+    min-height: 40px;
+    border: 1px solid $lightGreen;
+    box-shadow: 3px 3px 4px $lightGreen;
+    border-radius: 10px 0px 10px 0px;
+
+    &:hover,
+    &:focus {
+      background-color: $lightGreen;
+    }
+
+    & > a {
+      margin-left: 10px;
+    }
+    & > ion-icon {
+      color: $white;
+    }
+  }
 }
