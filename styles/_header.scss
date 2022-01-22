@@ -9,6 +9,17 @@
       border-left: 1px solid $lightGreen;
     }
   }
+  &-logo {
+    &__top {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+    &__obj {
+      position: relative;
+      z-index: -1;
+    }
+  }
   &-btn {
     padding: $pad;
     border: 1px solid transparent;

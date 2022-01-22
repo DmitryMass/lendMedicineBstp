@@ -99,26 +99,26 @@
     align-items: center;
     max-width: 235px;
     cursor: pointer;
-    &:hover {
-      max-width: 460px;
-      max-height: 86px;
-    }
-    &:hover > .section1-number {
-      font-size: 96px;
-      line-height: 150%;
-      font-weight: 500;
-      color: $darkGreen;
-      opacity: 1;
-      transition: 0.3s ease;
-    }
-    &:hover > .section1-info {
-      font-size: $md28;
-      line-height: $lhmd31;
-      font-weight: 500;
-      color: $black;
-      opacity: 1;
-      transition: 0.8s ease;
-    }
+    // &:hover {
+    //   max-width: 460px;
+    //   max-height: 86px;
+    // }
+    // &:hover > .section1-number {
+    //   font-size: 96px;
+    //   line-height: 150%;
+    //   font-weight: 500;
+    //   color: $darkGreen;
+    //   opacity: 1;
+    //   transition: 0.3s ease;
+    // }
+    // &:hover > .section1-info {
+    //   font-size: $md28;
+    //   line-height: $lhmd31;
+    //   font-weight: 500;
+    //   color: $black;
+    //   opacity: 1;
+    //   transition: 0.8s ease;
+    // }
     &:last-child {
       padding-bottom: 0px;
     }

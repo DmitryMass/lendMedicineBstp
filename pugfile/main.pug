@@ -15,7 +15,8 @@ main.main-page
                         li
                             button.dropdown-item(type='button')
                                 a.dropdown-link(href=linkVar.link)=linkVar.title
-                button.main-button Запись на прием
+                    button.dropdown-item(type='button')
+                        a.dropdown-link(href="#") Запись на прием 
             .main-block.flex-main
                 .slider-section
                     each sliderVar in sliders
@@ -32,10 +33,11 @@ main.main-page
                             object.slider-object(data="./assets/icons/arrow-right.svg", type="") 
                 .main-img 
                     img.main-picture(src="./assets/images/woman.png", alt="")
-    .dot-container
-        button.dot.dot-first.dots(onclick='currentSlide(1)') 
-            p.dot-txt Комплексные процедуры 
-        button.dot.dot-second.dots(onclick='currentSlide(2)') 
-            p.dot-txt Центр обучения
-        button.dot.dot-third.dots(onclick='currentSlide(3)') 
-            p.dot-txt VIP клиентам
+    .dot-menu
+        .dot-container
+            button.dot.dot-first.dots(onclick='currentSlide(1)') 
+                p.dot-txt Комплексные процедуры 
+            button.dot.dot-second.dots(onclick='currentSlide(2)') 
+                p.dot-txt Центр обучения
+            button.dot.dot-third.dots(onclick='currentSlide(3)') 
+                p.dot-txt VIP клиентам

@@ -122,6 +122,10 @@
   &.active:focus {
     background-color: $lightGreen;
   }
+  &-menu {
+    position: relative;
+    height: 85px;
+  }
 
   &-container {
     position: absolute;
@@ -129,8 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98%;
-    left: 1%;
+    width: 100%;
   }
   &-first,
   &-second,
@@ -142,16 +145,7 @@
     line-height: $lhmd24;
     height: 67px;
     text-align: center;
-    opacity: 0.8;
     border: 1px solid transparent;
-    &:hover {
-      opacity: 1;
-      transition: all 0.4s ease;
-    }
-    &.active:focus {
-      transition: 0.8s ease;
-      opacity: 1;
-    }
   }
   &-first {
     background-color: $darkGreen;

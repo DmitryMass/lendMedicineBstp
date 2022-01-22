@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
   &-dots {
     max-width: 520px;
@@ -32,7 +33,9 @@
       }
     }
   }
-
+  &-dotsMedia {
+    display: none;
+  }
   &-news {
     background-color: $lightGreen;
     &__btnNews {
