@@ -68,3 +68,28 @@
     }
   }
 }
+.icons--vk {
+  &:hover {
+    color: blue;
+    transition: all 0.8s ease;
+  }
+}
+.icons--youtube {
+  &:hover {
+    color: red;
+    transition: all 0.8s ease;
+  }
+}
+.icons--facebook {
+  &:hover {
+    color: blue;
+    transition: all 0.8s ease;
+  }
+}
+
+.icons--instagramm {
+  &:hover {
+    color: red;
+    transition: all 0.8s ease;
+  }
+}
