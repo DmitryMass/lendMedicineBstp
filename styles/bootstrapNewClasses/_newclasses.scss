@@ -40,7 +40,7 @@
   height: 400px;
   top: 10%;
   border-radius: 12px;
-
+  background: rgb(209, 238, 238);
   &-end {
     right: 0;
     left: 0;
@@ -48,6 +48,9 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     transform: translateY(100%);
   }
+}
+.form-control {
+  background-color: #caffe3;
 }
 ///////////////// Main section
 
@@ -64,6 +67,9 @@
   }
   &-line {
     display: flex;
+  }
+  &-menu {
+    margin-bottom: 40px;
   }
 }
 .btn-secondary {
