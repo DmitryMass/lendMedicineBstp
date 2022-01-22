@@ -37,9 +37,10 @@
 .offcanvas {
   width: 100%;
   position: absolute;
-  height: 100%;
+  height: 400px;
+  top: 10%;
   border-radius: 12px;
-  top: 0;
+
   &-end {
     right: 0;
     left: 0;

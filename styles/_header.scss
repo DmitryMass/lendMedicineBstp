@@ -45,6 +45,9 @@
     &--salon {
       padding-right: 15px;
     }
+    &:hover {
+      color: $black;
+    }
   }
   &-salon > .icons--salon {
     margin-right: 15px;
