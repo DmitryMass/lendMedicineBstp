@@ -561,9 +561,10 @@
 
 .section3-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .section3-box__button {
@@ -1038,6 +1039,9 @@ li {
     margin-bottom: 3px;
     box-shadow: 5px 4px 3px #00868a;
     border-radius: 0px 8px 0 8px;
+  }
+  .section3-list {
+    transform: none;
   }
 }
 
