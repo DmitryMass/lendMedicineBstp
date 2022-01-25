@@ -3,7 +3,7 @@
     min-height: 90px;
     border: 1px solid transparent;
     cursor: pointer;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     &:hover {
       border-right: 1px solid $lightGreen;
       border-left: 1px solid $lightGreen;
@@ -23,7 +23,7 @@
   &-btn {
     padding: $pad;
     border: 1px solid transparent;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     &:hover {
       border-right: 1px solid $lightGreen;
@@ -31,7 +31,7 @@
     }
     &:hover .header-button {
       background-color: $lightGreen;
-      transition: all 0.8s ease;
+      transition: all 0.3s ease;
     }
   }
 
@@ -61,32 +61,32 @@
   }
   &-li > :hover .icons--vk {
     color: blue;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
   }
   &-li > :hover .icons--youtube {
     color: red;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
   }
   &-li > :hover .icons--facebook {
     color: blue;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
   }
   &-li > :hover .icons--instagramm {
     color: red;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
   }
   &-li {
     &--services {
       position: relative;
       cursor: pointer;
-      transition: all 0.8s ease;
+      transition: all 0.3s ease;
       &:hover > .header-content {
         display: block;
         z-index: 5;
       }
       &:hover .icons--salon {
         transform: rotate(-180deg);
-        transition: all 0.8s ease;
+        transition: all 0.3s ease;
       }
     }
   }

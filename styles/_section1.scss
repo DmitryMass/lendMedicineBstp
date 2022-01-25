@@ -82,15 +82,14 @@
     width: 50%;
   }
   &-block2 {
-    position: relative;
     &_img {
-      position: absolute;
-      top: 85px;
-      right: 0;
-      z-index: -1;
       max-width: 306px;
       max-height: 400px;
     }
+  }
+  &-pretty {
+    display: flex;
+    gap: 15px;
   }
   &-box1 {
     position: relative;
@@ -98,27 +97,6 @@
     display: flex;
     align-items: center;
     max-width: 235px;
-    cursor: pointer;
-    // &:hover {
-    //   max-width: 460px;
-    //   max-height: 86px;
-    // }
-    // &:hover > .section1-number {
-    //   font-size: 96px;
-    //   line-height: 150%;
-    //   font-weight: 500;
-    //   color: $darkGreen;
-    //   opacity: 1;
-    //   transition: 0.3s ease;
-    // }
-    // &:hover > .section1-info {
-    //   font-size: $md28;
-    //   line-height: $lhmd31;
-    //   font-weight: 500;
-    //   color: $black;
-    //   opacity: 1;
-    //   transition: 0.8s ease;
-    // }
     &:last-child {
       padding-bottom: 0px;
     }
@@ -127,13 +105,13 @@
     font-size: $lg48;
     line-height: 150%;
     color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     margin-right: 20px;
   }
   &-info {
     font-size: $sm;
     font-weight: 500;
     line-height: $lhsm17;
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }

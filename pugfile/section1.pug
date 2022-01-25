@@ -14,10 +14,11 @@ section.section1-main
         .section1-estetic 
             .section1-block2 
                 button.section1-button.section1-button__block2 Эстетика красоты
-                ul.section1-ul
-                    each aboutVar in aboutItems
-                        li.section1-box1 
-                            h2.section1-number=aboutVar.about
-                            p.section1-info=aboutVar.info
-                img.section1-block2_img(src="./assets/images/diploma.png", alt="")
+                .section1-pretty
+                    ul.section1-ul
+                        each aboutVar in aboutItems
+                            li.section1-box1 
+                                h2.section1-number=aboutVar.about
+                                p.section1-info=aboutVar.info
+                    img.section1-block2_img(src="./assets/images/diploma.png", alt="")
                         

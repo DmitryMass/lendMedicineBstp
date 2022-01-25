@@ -81,9 +81,18 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:focus {
     transition: all 0.8s ease;
     box-shadow: 0px 1px 8px $darkGreen;
     background-color: $darkGreen;
+  }
+}
+
+.dropdown-toggle {
+  &:after {
+    vertical-align: 0;
   }
 }

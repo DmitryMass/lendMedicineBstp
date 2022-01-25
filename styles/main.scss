@@ -128,8 +128,7 @@ li {
 }
 
 // Media ///////////////////////
-@media screen and (max-width: 1400) {
-}
+
 @media screen and (max-width: 1400px) {
   // header///////////////////////
 
@@ -256,13 +255,15 @@ li {
   }
   .section1 {
     &-block2 {
-      margin-bottom: 115px;
+      margin-bottom: 40px;
       &_img {
-        position: absolute;
-        width: 130px;
-        height: 155px;
-        top: 300px;
+        width: 200px;
+        height: 250px;
       }
+    }
+    &-pretty {
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -310,7 +311,7 @@ li {
 
 ////////////////////////////////////////
 
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 576px) {
   // HEADER section  /////////////////////
 
   .header {
@@ -358,6 +359,18 @@ li {
     }
     &-third {
       border-radius: 0px 8px 8px 0px;
+    }
+  }
+
+  ///// SECTION 1 /////
+
+  .section1 {
+    &-block2 {
+      margin-bottom: 40px;
+      &_img {
+        width: 150px;
+        height: 200px;
+      }
     }
   }
 
