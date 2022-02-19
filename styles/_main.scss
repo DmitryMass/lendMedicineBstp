@@ -124,7 +124,7 @@
   }
   &-menu {
     position: relative;
-    height: 85px;
+    height: 88px;
   }
 
   &-container {
@@ -157,6 +157,9 @@
   &-second,
   &-third {
     width: 324px;
+    &.active:focus {
+      border: 1px solid $darkGreen;
+    }
   }
 }
 //animation

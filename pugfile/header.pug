@@ -2,7 +2,7 @@ header.header-main
     .container.flex-container  
         .header-logo__block
                     a.header-logo__top(href="#") 
-                        object.header-logo__obj(data="./assets/icons/logo.svg", type="") 
+                        object.header-logo__obj(data="./assets/icons/logo.svg", type="image/svg+xml") 
         nav.header-nav 
             ul.header-ul.d-flex
                 li.header-li.flex-box__btn 
@@ -20,8 +20,8 @@ header.header-main
                             a(href="#") Ваша информация
                         li.header-li--content
                             a(href="#") Ваша информация
-                .header-btn.flex-box 
-                    button.header-button.flex-box__btn 
+                li.header-btn.flex-box 
+                    .header-button.flex-box__btn 
                         ion-icon(name='eye-outline').white.white--pad.icons
                         a(href="").white.white--btn Версия для слабовидящих
                 li.header-li.flex-box__btn 
@@ -43,7 +43,7 @@ header.header-main
             #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header
                     a#offcanvasNavbarLabel.offcanvas-title.header-logo__top(href="#")  
-                        object.header-logo__obj(data="./assets/icons/logo.svg", type="") 
+                        object.header-logo__obj(data="./assets/icons/logo.svg", type="image/svg+xml") 
                     button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
                 .offcanvas-body
                     ul.navbar-nav.justify-content-end.flex-grow-1.pe-3

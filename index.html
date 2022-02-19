@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
         <header class="header-main"> 
           <div class="container flex-container"> 
             <div class="header-logo__block"><a class="header-logo__top" href="#"> 
-                <object class="header-logo__obj" data="./assets/icons/logo.svg" type=""> </object></a></div>
+                <object class="header-logo__obj" data="./assets/icons/logo.svg" type="image/svg+xml"> </object></a></div>
             <nav class="header-nav"> 
               <ul class="header-ul d-flex">
                 <li class="header-li flex-box__btn"> <a class="header-link" href="#">+7 (123) 456 78 90</a></li>
@@ -31,11 +31,11 @@
                     <li class="header-li--content"><a href="#">Ваша информация</a></li>
                   </ul>
                 </li>
-                <div class="header-btn flex-box"> 
-                  <button class="header-button flex-box__btn"> 
+                <li class="header-btn flex-box"> 
+                  <div class="header-button flex-box__btn"> 
                     <ion-icon class="white white--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
-                  </button>
-                </div>
+                  </div>
+                </li>
                 <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
                     <ion-icon class="lgth-green icons icons--vk" name="logo-vk"></ion-icon></a></li>
                 <li class="header-li flex-box__btn"> <a class="header-link" href="#"> 
@@ -50,7 +50,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
               <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header"><a class="offcanvas-title header-logo__top" id="offcanvasNavbarLabel" href="#"> 
-                    <object class="header-logo__obj" data="./assets/icons/logo.svg" type=""> </object></a>
+                    <object class="header-logo__obj" data="./assets/icons/logo.svg" type="image/svg+xml"> </object></a>
                   <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -87,28 +87,28 @@
                   <li class="main-li"><a class="main-link" href="dentistry.html">Стоматология</a></li>
                   <li class="main-li"><a class="main-link" href="laser.html">Лазерная медицина</a></li>
                   <li class="main-li"><a class="main-link" href="contact.html">Контакты</a></li>
-                  <button class="main-button">Запись на прием</button>
+                  <li><a class="main-button" href="#">Запись на прием </a></li>
                 </ul>
               </nav>
               <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Выберите раздел</button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                   <li>
-                    <button class="dropdown-item" type="button"><a class="dropdown-link" href="cosmetology.html">Косметология</a></button>
+                    <div class="dropdown-item"><a class="dropdown-link" href="cosmetology.html">Косметология</a></div>
                   </li>
                   <li>
-                    <button class="dropdown-item" type="button"><a class="dropdown-link" href="plastic.html">Пластическая хирургия</a></button>
+                    <div class="dropdown-item"><a class="dropdown-link" href="plastic.html">Пластическая хирургия</a></div>
                   </li>
                   <li>
-                    <button class="dropdown-item" type="button"><a class="dropdown-link" href="dentistry.html">Стоматология</a></button>
+                    <div class="dropdown-item"><a class="dropdown-link" href="dentistry.html">Стоматология</a></div>
                   </li>
                   <li>
-                    <button class="dropdown-item" type="button"><a class="dropdown-link" href="laser.html">Лазерная медицина</a></button>
+                    <div class="dropdown-item"><a class="dropdown-link" href="laser.html">Лазерная медицина</a></div>
                   </li>
                   <li>
-                    <button class="dropdown-item" type="button"><a class="dropdown-link" href="contact.html">Контакты</a></button>
+                    <div class="dropdown-item"><a class="dropdown-link" href="contact.html">Контакты</a></div>
                   </li>
-                  <button class="dropdown-item" type="button"><a class="dropdown-link" href="#">Запись на прием </a></button>
+                  <div class="dropdown-item" type="button"><a class="dropdown-link" href="#">Запись на прием </a></div>
                 </ul>
               </div>
               <div class="main-block flex-main">
@@ -141,8 +141,8 @@
                     </div>
                   </div>
                   <div class="slider-button">               <a class="next" onclick="nextSlide()"> 
-                      <object class="slider-object" data="./assets/icons/arrow-lefth.svg" type=""> </object></a><a class="previous" onclick="previousSlide()"> 
-                      <object class="slider-object" data="./assets/icons/arrow-right.svg" type=""> </object></a></div>
+                      <object class="slider-object" data="./assets/icons/arrow-lefth.svg" type="image/svg+xml"> </object></a><a class="previous" onclick="previousSlide()"> 
+                      <object class="slider-object" data="./assets/icons/arrow-right.svg" type="image/svg+xml"> </object></a></div>
                 </div>
                 <div class="main-img"> <img class="main-picture" src="./assets/images/woman.png" alt=""></div>
               </div>
@@ -150,15 +150,9 @@
           </div>
           <div class="dot-menu">
             <div class="dot-container">
-              <button class="dot dot-first dots" onclick="currentSlide(1)"> 
-                <p class="dot-txt">Комплексные процедуры </p>
-              </button>
-              <button class="dot dot-second dots" onclick="currentSlide(2)"> 
-                <p class="dot-txt">Центр обучения</p>
-              </button>
-              <button class="dot dot-third dots" onclick="currentSlide(3)"> 
-                <p class="dot-txt">VIP клиентам</p>
-              </button>
+              <button class="dot dot-first dots" onclick="currentSlide(1)">Комплексные процедуры </button>
+              <button class="dot dot-second dots" onclick="currentSlide(2)">Центр обучения</button>
+              <button class="dot dot-third dots" onclick="currentSlide(3)">VIP клиентам</button>
             </div>
           </div>
         </main>
@@ -170,12 +164,11 @@
               <button class="section1-button">Инновации</button>
               <p class="section1-subtitle">Мы практикуем новый курс процедур аппаратной косметологии  </p>
               <div class="section1-next d-flex">
-                <button class="section1-btn"> 
+                <div class="section1-btn"> 
                   <div class="section1-object_btn">
                     <object data="./assets/icons/arrow.svg" type=""> </object>
-                  </div>
-                  <p class="section1-about">Подробнее</p>
-                </button>
+                  </div><a class="section1-about" href="#">Подробнее</a>
+                </div>
               </div>
             </div>
             <div class="section1-img"> <img class="section1-img_btn" src="./assets/images/innovations__img.png" alt=""></div>
@@ -264,7 +257,7 @@
               <div class="section3-list"> 
                 <p class="section3-list__item">Лазерное и фотоомоложение</p>
                 <button class="section1-object_btn section3-object__button">
-                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                  <object data="./assets/icons/arrow.svg" type="image/svg+xml"> </object>
                 </button>
               </div>
             </div>
@@ -273,7 +266,7 @@
               <div class="section3-list"> 
                 <p class="section3-list__item">Лазерное и фотоомоложение</p>
                 <button class="section1-object_btn section3-object__button">
-                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                  <object data="./assets/icons/arrow.svg" type="image/svg+xml"> </object>
                 </button>
               </div>
             </div>
@@ -282,7 +275,7 @@
               <div class="section3-list"> 
                 <p class="section3-list__item">Лазерное и фотоомоложение</p>
                 <button class="section1-object_btn section3-object__button">
-                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                  <object data="./assets/icons/arrow.svg" type="image/svg+xml"> </object>
                 </button>
               </div>
             </div>
@@ -291,7 +284,7 @@
               <div class="section3-list"> 
                 <p class="section3-list__item">Лазерное и фотоомоложение</p>
                 <button class="section1-object_btn section3-object__button">
-                  <object data="./assets/icons/arrow.svg" type=""> </object>
+                  <object data="./assets/icons/arrow.svg" type="image/svg+xml"> </object>
                 </button>
               </div>
             </div>
@@ -341,9 +334,9 @@
           </div>
           <div class="footer-menu"> 
             <div class="footer-btn">
-              <button class="footer-button flex-box__btn">
+              <div class="footer-button flex-box__btn">
                 <ion-icon class="whitewhite--pad icons" name="eye-outline"></ion-icon><a class="white white--btn" href="">Версия для слабовидящих</a>
-              </button>
+              </div>
             </div>
             <div class="footer-social">
               <div class="footer-messengers flex-box__btn"><a class="footer-link" href=""> 

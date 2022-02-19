@@ -6,16 +6,17 @@ main.main-page
                     each linkVar in linkItems 
                         li.main-li
                             a.main-link(href=linkVar.link)=linkVar.title 
-                    button.main-button Запись на прием
+                    li
+                        a.main-button(href="#") Запись на прием 
             .dropdown
                 button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
                     | Выберите раздел
                 ul.dropdown-menu(aria-labelledby='dropdownMenu2')
                     each linkVar in linkItems
                         li
-                            button.dropdown-item(type='button')
+                            .dropdown-item
                                 a.dropdown-link(href=linkVar.link)=linkVar.title
-                    button.dropdown-item(type='button')
+                    .dropdown-item(type='button')
                         a.dropdown-link(href="#") Запись на прием 
             .main-block.flex-main
                 .slider-section
@@ -28,16 +29,13 @@ main.main-page
                                 button.main-slider__button=sliderVar.button
                     .slider-button                
                         a.next(onclick='nextSlide()') 
-                            object.slider-object(data="./assets/icons/arrow-lefth.svg", type="") 
+                            object.slider-object(data="./assets/icons/arrow-lefth.svg", type="image/svg+xml") 
                         a.previous(onclick='previousSlide()') 
-                            object.slider-object(data="./assets/icons/arrow-right.svg", type="") 
+                            object.slider-object(data="./assets/icons/arrow-right.svg", type="image/svg+xml") 
                 .main-img 
                     img.main-picture(src="./assets/images/woman.png", alt="")
     .dot-menu
         .dot-container
-            button.dot.dot-first.dots(onclick='currentSlide(1)') 
-                p.dot-txt Комплексные процедуры 
-            button.dot.dot-second.dots(onclick='currentSlide(2)') 
-                p.dot-txt Центр обучения
-            button.dot.dot-third.dots(onclick='currentSlide(3)') 
-                p.dot-txt VIP клиентам
+            button.dot.dot-first.dots(onclick='currentSlide(1)') Комплексные процедуры 
+            button.dot.dot-second.dots(onclick='currentSlide(2)') Центр обучения
+            button.dot.dot-third.dots(onclick='currentSlide(3)') VIP клиентам

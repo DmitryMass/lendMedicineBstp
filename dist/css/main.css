@@ -269,7 +269,7 @@
 
 .dot-menu {
   position: relative;
-  height: 85px;
+  height: 88px;
 }
 
 .dot-container {
@@ -303,6 +303,10 @@
 
 .dot-second, .dot-third {
   width: 324px;
+}
+
+.dot-second.active:focus, .dot-third.active:focus {
+  border: 1px solid #00868a;
 }
 
 .main-card {
@@ -358,12 +362,6 @@
   background: transparent;
   color: white;
   border: none;
-  cursor: pointer;
-}
-
-.section1-btn:hover {
-  color: #3cffce;
-  transition: 0.8s ease;
 }
 
 .section1-about {
@@ -372,6 +370,11 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05em;
+}
+
+.section1-about:hover {
+  color: #3cffce;
+  transition: 0.8s ease;
 }
 
 .section1-object_btn {
@@ -767,6 +770,7 @@
   border: 1px solid #4fbfa5;
   box-shadow: 3px 3px 4px #4fbfa5;
   border-radius: 10px 0px 10px 0px;
+  padding: 5px;
 }
 
 .footer-button:hover, .footer-button:focus {
